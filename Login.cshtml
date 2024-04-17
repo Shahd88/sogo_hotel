@@ -1,0 +1,132 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<section class="site-hero inner-page overlay" style="background-image: url(images/hero_4.jpg)" data-stellar-background-ratio="0.5">
+    <div class="container">
+        <div class="row site-hero-inner justify-content-center align-items-center">
+            <div class="col-md-10 text-center" data-aos="fade">
+                <h1 class="heading mb-3">log in</h1>
+                <ul class="custom-breadcrumbs mb-4">
+                    <li><a href="index.html">Home</a></li>
+                    <li>&bullet;</li>
+                    <li>log in</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <a class="mouse smoothscroll" href="#next">
+        <div class="mouse-icon">
+            <span class="mouse-wheel"></span>
+        </div>
+    </a>
+
+</section>
+<div class="login" id="log in">
+    <form action="">
+        <h1>Log in</h1>
+        <div class="input-box">
+            <input type="text" placeholder="Username" required />
+            <i class="bx bxs-user"></i>
+        </div>
+        <div class="input-box">
+            <input type="password" placeholder="Password" required />
+            <i class="bx bxs-lock-alt"></i>
+        </div>
+        <div class="remember-forgot">
+            <button type="submit" class="bttn">Login</button>
+            <div class="register-link">
+                <p>don't have an account  <a href="~/home/signup">register</a></p>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- End login -->
+<style>
+    /* login */
+    body .login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: rgb(0, 129, 129);
+        /* background: url(/images/log.jpg); */
+        /* border-radius: 10px;*/
+    }
+
+    .login h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .login .input-box {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 30px 0;
+    }
+
+    .input-box input {
+        width: 100%;
+        height: 100%;
+        /* background: transparent; */
+        border: none;
+        outline: none;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 40px;
+        font-size: 17px;
+        color: #101010;
+        padding: 20px 45px 20px 20px;
+    }
+
+    .input-box .input::placeholder {
+        color: #fff;
+    }
+
+    .input-box i {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+    }
+
+    .remember-forgot a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+        .remember-forgot a:hover {
+            text-decoration: underline;
+        }
+
+    .login .register-link {
+        font-size: 14.5px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .register-link a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .login .bttn {
+        width: 100%;
+        height: 45px;
+        background: #fff;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        font-size: 17px;
+        color: #333;
+        font-weight: 600;
+    }
+   
+    /* end login */
+</style>
